@@ -62,4 +62,4 @@ Add `pod 'VolumeSlider'` to your Podfile.
 
 ### Manual Installation
 
-Just copy `StepSlider` class to your project.
+Just copy `VolumeSlider` class to your project.
