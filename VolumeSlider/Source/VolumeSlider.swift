@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol VolumeSliderDelegate {
+public protocol VolumeSliderDelegate {
     func volumnSliderValueChanged(_ slider: VolumeSlider)
 }
 
 @IBDesignable
-class VolumeSlider: UIView {
+open class VolumeSlider: UIView {
     
     open var delegate: VolumeSliderDelegate?
     
@@ -153,7 +153,7 @@ class VolumeSlider: UIView {
     }
     
     
-    func drawLine(_ index: Int) {
+    fileprivate func drawLine(_ index: Int) {
 
         let x = (barWidth+_barSpace)*CGFloat(index-1) + barWidth/2
         let y:CGFloat = drawableHeight - CGFloat(index) * (drawableHeight / CGFloat(numberOfBars)) + verticalPadding
@@ -179,7 +179,7 @@ class VolumeSlider: UIView {
     
     //MARK:- Touch event
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let location = touch.location(in: self)
             if self.bounds.contains(location) {
@@ -188,7 +188,7 @@ class VolumeSlider: UIView {
         }
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let location = touch.location(in: self)
             if self.bounds.contains(location) {
@@ -197,7 +197,7 @@ class VolumeSlider: UIView {
         }
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             let location = touch.location(in: self)
             self.calculateProgress(location)

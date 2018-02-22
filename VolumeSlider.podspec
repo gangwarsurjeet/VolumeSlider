@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'VolumeSlider'
-s.version          = '1.0.2'
+s.version          = '1.0.3'
 s.summary          = 'A custom volume slider with bar representation.'
 
 s.description      = <<-DESC
@@ -13,7 +13,7 @@ s.author           = { 'Surjeet Singh' => 'surjeetgangwar24@gmail.com' }
 s.source           = { :git => 'https://github.com/surjeet-singh/VolumeSlider.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '8.0'
-s.source_files = 'VolumeSlider/Source/*.{swift,plist}'
+s.source_files = 'VolumeSlider/Source/*.{swift}'
 s.swift_version = '3.0'
 # s.frameworks = 'UIKit'
 
