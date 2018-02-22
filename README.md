@@ -7,14 +7,14 @@ It can be managed using `IBDesignable` and `IBInspectable` without writting any 
 
 With single color 
 `volumeSlider.barColor = UIColor.red`
-![SliderImage](https://github.com/surjeet-singh/VolumeSlider/blob/master/ScreenShot/Screen%20Shot%2002.png)
+![SliderImage](https://github.com/surjeet-singh/VolumeSlider/blob/master/ScreenShot/Screen%20Shot%2001.png)
 
 
 If you need horizontal gradient color on slider, then use
 
 `volumeSlider.barColors = [UIColor.red, UIColor.green]`
 
-![SliderImage](https://github.com/surjeet-singh/VolumeSlider/blob/master/ScreenShot/Screen%20Shot%2001.png)
+![SliderImage](https://github.com/surjeet-singh/VolumeSlider/blob/master/ScreenShot/Screen%20Shot%2002.png)
 
 ## Usage
 
