@@ -3,7 +3,7 @@
 Volume Slider provide a subclass of `UIView`, used to create volumeSlider with bar representation.
 It can be managed using `IBDesignable` and `IBInspectable` without writting any code.
 
-![SliderImage](https://github.com/surjeet-singh/VolumeSlider/blob/master/ScreenShot/VolumeSlider.gif)
+![SliderImage](https://github.com/surjeet-singh/VolumeSlider/blob/master/ScreenShot/volumeSlider-animation.gif)
 
 With single color 
 `volumeSlider.barColor = UIColor.red`
